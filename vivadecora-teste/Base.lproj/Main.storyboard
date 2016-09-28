@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PmZ-CE-B9d">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Viva Decora-->
+        <scene sceneID="cuS-W1-qwq">
+            <objects>
+                <tableViewController id="bcR-I6-VOB" customClass="LocalListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="57" sectionHeaderHeight="7" sectionFooterHeight="7" id="igz-Ia-4OE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="venueDetails" id="AJN-Gb-Msv" customClass="FeaturedListTableViewCell">
+                                <rect key="frame" x="0.0" y="114" width="600" height="57"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AJN-Gb-Msv" id="IBd-Gr-STb">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="tO0-FK-HZx" kind="show" identifier="venueDetails" id="kZm-3O-Qa2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bcR-I6-VOB" id="4Xe-us-EI4"/>
+                            <outlet property="delegate" destination="bcR-I6-VOB" id="4mb-rZ-6r6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Viva Decora" id="Rn3-Me-26y">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="nva-Lh-ccK">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OW7-LW-uYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="311"/>
+        </scene>
+        <!--Venue Details Table View Controller-->
+        <scene sceneID="PEH-Db-QS5">
+            <objects>
+                <tableViewController id="tO0-FK-HZx" customClass="VenueDetailsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="J75-JN-Aqy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="venue" selectionStyle="none" indentationWidth="10" reuseIdentifier="venue" id="vFC-vL-RkL" customClass="FeaturedListTableViewCell">
+                                <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vFC-vL-RkL" id="VQy-ju-88J">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tO0-FK-HZx" id="6JN-lT-Zt3"/>
+                            <outlet property="delegate" destination="tO0-FK-HZx" id="89v-KN-YSV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="I6u-2M-Phg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ul-Fm-oG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408" y="311"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3fe-Aw-tuL">
+            <objects>
+                <navigationController id="PmZ-CE-B9d" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dXH-NJ-QMk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.3529411764705882" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bcR-I6-VOB" kind="relationship" relationship="rootViewController" id="qtu-2h-zu2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1WU-Vc-G4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="277"/>
+        </scene>
+    </scenes>
+</document>
