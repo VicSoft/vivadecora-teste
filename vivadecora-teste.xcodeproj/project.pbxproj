@@ -21,8 +21,6 @@
 		57D6A42D1D95DDC9004E266D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A42C1D95DDC9004E266D /* AppDelegate.m */; };
 		57D6A4331D95DDC9004E266D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D6A4311D95DDC9004E266D /* Main.storyboard */; };
 		57D6A4351D95DDC9004E266D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D6A4341D95DDC9004E266D /* Assets.xcassets */; };
-		57D6A4431D95DDC9004E266D /* vivadecora_testeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A4421D95DDC9004E266D /* vivadecora_testeTests.m */; };
-		57D6A44E1D95DDC9004E266D /* vivadecora_testeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A44D1D95DDC9004E266D /* vivadecora_testeUITests.m */; };
 		57D6A4661D95E146004E266D /* LocalListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A4651D95E146004E266D /* LocalListTableViewController.m */; };
 		57D6A46C1D95EB9A004E266D /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A46B1D95EB9A004E266D /* MainTableViewController.m */; };
 		57D6D5B41D975FE9008D0445 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57D6D5B21D975FE9008D0445 /* Model.xcdatamodeld */; };
@@ -73,11 +71,7 @@
 		57D6A4341D95DDC9004E266D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D6A4391D95DDC9004E266D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57D6A43E1D95DDC9004E266D /* vivadecora-testeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vivadecora-testeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57D6A4421D95DDC9004E266D /* vivadecora_testeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vivadecora_testeTests.m; sourceTree = "<group>"; };
-		57D6A4441D95DDC9004E266D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57D6A4491D95DDC9004E266D /* vivadecora-testeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vivadecora-testeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57D6A44D1D95DDC9004E266D /* vivadecora_testeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vivadecora_testeUITests.m; sourceTree = "<group>"; };
-		57D6A44F1D95DDC9004E266D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57D6A45C1D95E01E004E266D /* BusinessConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessConstants.h; path = Header/BusinessConstants.h; sourceTree = "<group>"; };
 		57D6A4641D95E146004E266D /* LocalListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalListTableViewController.h; path = ViewControllers/LocalListTableViewController.h; sourceTree = "<group>"; };
 		57D6A4651D95E146004E266D /* LocalListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalListTableViewController.m; path = ViewControllers/LocalListTableViewController.m; sourceTree = "<group>"; };
@@ -188,8 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				57D6A4271D95DDC9004E266D /* vivadecora-teste */,
-				57D6A4411D95DDC9004E266D /* vivadecora-testeTests */,
-				57D6A44C1D95DDC9004E266D /* vivadecora-testeUITests */,
 				57D6A4261D95DDC9004E266D /* Products */,
 				B7A2BE72D4C99CFA876F58A3 /* Pods */,
 				AF35246F22878A416949787B /* Frameworks */,
@@ -232,24 +224,6 @@
 				57D6A4291D95DDC9004E266D /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		57D6A4411D95DDC9004E266D /* vivadecora-testeTests */ = {
-			isa = PBXGroup;
-			children = (
-				57D6A4421D95DDC9004E266D /* vivadecora_testeTests.m */,
-				57D6A4441D95DDC9004E266D /* Info.plist */,
-			);
-			path = "vivadecora-testeTests";
-			sourceTree = "<group>";
-		};
-		57D6A44C1D95DDC9004E266D /* vivadecora-testeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				57D6A44D1D95DDC9004E266D /* vivadecora_testeUITests.m */,
-				57D6A44F1D95DDC9004E266D /* Info.plist */,
-			);
-			path = "vivadecora-testeUITests";
 			sourceTree = "<group>";
 		};
 		57D6A45B1D95DFF0004E266D /* Header */ = {
@@ -503,7 +477,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57D6A4431D95DDC9004E266D /* vivadecora_testeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +484,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57D6A44E1D95DDC9004E266D /* vivadecora_testeUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
