@@ -12,11 +12,28 @@
 
 @interface VenueDetailsTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *shareBarButtonItem;
+
 @end
 
 @implementation VenueDetailsTableViewController
 
 static NSString *identifier = @"venue";
+
+#pragma mark - Actions
+
+- (IBAction)shareContentTouched:(id)sender {
+    NSArray *strUrlParts = [[self.venue sameas] componentsSeparatedByString:@","];
+    NSString *contentToShare = [@"Check this out " stringByAppendingString:[strUrlParts firstObject]];
+    
+    UIActivityViewController *activityView = [[UIActivityViewController alloc] initWithActivityItems:@[contentToShare] applicationActivities:nil];
+    
+    NSArray *excludedActivities = @[UIActivityTypeMail];
+    activityView.excludedActivityTypes = excludedActivities;
+    
+    [self presentViewController:activityView animated:YES completion:nil];
+}
+
 
 #pragma mark - Class methods
 
@@ -112,6 +129,10 @@ static NSString *identifier = @"venue";
     cell.dummyVenueDetailView = [[DummyVenueDetailView alloc] initWithVenue:self.venue usingFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
     
     [cell addSubview:cell.dummyVenueDetailView];
+    
+    if ([self.venue sameas] && [[self.venue sameas] length] > 0) {
+        [self.shareBarButtonItem setEnabled:YES];
+    }
     
     return cell;
 }

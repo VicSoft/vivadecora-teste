@@ -65,7 +65,16 @@
                             <outlet property="delegate" destination="tO0-FK-HZx" id="89v-KN-YSV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="I6u-2M-Phg"/>
+                    <navigationItem key="navigationItem" id="I6u-2M-Phg">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="share_ico" id="Jat-t8-VSb">
+                            <connections>
+                                <action selector="shareContentTouched:" destination="tO0-FK-HZx" id="x0W-Ft-rea"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="shareBarButtonItem" destination="Jat-t8-VSb" id="ayN-A6-V48"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ul-Fm-oG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,4 +103,7 @@
             <point key="canvasLocation" x="-18" y="277"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="share_ico" width="21" height="21"/>
+    </resources>
 </document>

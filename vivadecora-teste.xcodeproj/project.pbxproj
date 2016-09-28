@@ -343,6 +343,7 @@
 				TargetAttributes = {
 					57D6A4241D95DDC9004E266D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = B384R35JC3;
 					};
 					57D6A43D1D95DDC9004E266D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -605,6 +606,7 @@
 			baseConfigurationReference = A211E234EA80AC91FA3CAE6C /* Pods-vivadecora-teste.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "vivadecora-teste/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -618,6 +620,7 @@
 			baseConfigurationReference = 75E7C929AAB6287C46591A85 /* Pods-vivadecora-teste.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "vivadecora-teste/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
