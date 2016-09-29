@@ -29,23 +29,6 @@
 		57DE614A1D976BEC000BE59B /* Venue+Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE61491D976BEC000BE59B /* Venue+Service.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		57D6A43F1D95DDC9004E266D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57D6A41D1D95DDC8004E266D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 57D6A4241D95DDC9004E266D;
-			remoteInfo = "vivadecora-teste";
-		};
-		57D6A44A1D95DDC9004E266D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57D6A41D1D95DDC8004E266D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 57D6A4241D95DDC9004E266D;
-			remoteInfo = "vivadecora-teste";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		5704686A1D95F1420086944D /* FeaturedListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeaturedListTableViewCell.h; path = Custom/FeaturedListTableViewCell.h; sourceTree = "<group>"; };
 		5704686B1D95F1420086944D /* FeaturedListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeaturedListTableViewCell.m; path = Custom/FeaturedListTableViewCell.m; sourceTree = "<group>"; };
@@ -70,8 +53,6 @@
 		57D6A4321D95DDC9004E266D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57D6A4341D95DDC9004E266D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D6A4391D95DDC9004E266D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57D6A43E1D95DDC9004E266D /* vivadecora-testeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vivadecora-testeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57D6A4491D95DDC9004E266D /* vivadecora-testeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vivadecora-testeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D6A45C1D95E01E004E266D /* BusinessConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessConstants.h; path = Header/BusinessConstants.h; sourceTree = "<group>"; };
 		57D6A4641D95E146004E266D /* LocalListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalListTableViewController.h; path = ViewControllers/LocalListTableViewController.h; sourceTree = "<group>"; };
 		57D6A4651D95E146004E266D /* LocalListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalListTableViewController.m; path = ViewControllers/LocalListTableViewController.m; sourceTree = "<group>"; };
@@ -95,20 +76,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				56BFACD02988A00AEF448151 /* libPods-vivadecora-teste.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57D6A43B1D95DDC9004E266D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57D6A4461D95DDC9004E266D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,8 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				57D6A4251D95DDC9004E266D /* Viva Decora Teste.app */,
-				57D6A43E1D95DDC9004E266D /* vivadecora-testeTests.xctest */,
-				57D6A4491D95DDC9004E266D /* vivadecora-testeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,62 +261,19 @@
 			productReference = 57D6A4251D95DDC9004E266D /* Viva Decora Teste.app */;
 			productType = "com.apple.product-type.application";
 		};
-		57D6A43D1D95DDC9004E266D /* vivadecora-testeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 57D6A4551D95DDC9004E266D /* Build configuration list for PBXNativeTarget "vivadecora-testeTests" */;
-			buildPhases = (
-				57D6A43A1D95DDC9004E266D /* Sources */,
-				57D6A43B1D95DDC9004E266D /* Frameworks */,
-				57D6A43C1D95DDC9004E266D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				57D6A4401D95DDC9004E266D /* PBXTargetDependency */,
-			);
-			name = "vivadecora-testeTests";
-			productName = "vivadecora-testeTests";
-			productReference = 57D6A43E1D95DDC9004E266D /* vivadecora-testeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		57D6A4481D95DDC9004E266D /* vivadecora-testeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 57D6A4581D95DDC9004E266D /* Build configuration list for PBXNativeTarget "vivadecora-testeUITests" */;
-			buildPhases = (
-				57D6A4451D95DDC9004E266D /* Sources */,
-				57D6A4461D95DDC9004E266D /* Frameworks */,
-				57D6A4471D95DDC9004E266D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				57D6A44B1D95DDC9004E266D /* PBXTargetDependency */,
-			);
-			name = "vivadecora-testeUITests";
-			productName = "vivadecora-testeUITests";
-			productReference = 57D6A4491D95DDC9004E266D /* vivadecora-testeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		57D6A41D1D95DDC8004E266D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Victor Barbosa";
 				TargetAttributes = {
 					57D6A4241D95DDC9004E266D = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = B384R35JC3;
-					};
-					57D6A43D1D95DDC9004E266D = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 57D6A4241D95DDC9004E266D;
-					};
-					57D6A4481D95DDC9004E266D = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 57D6A4241D95DDC9004E266D;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -369,8 +291,6 @@
 			projectRoot = "";
 			targets = (
 				57D6A4241D95DDC9004E266D /* vivadecora-teste */,
-				57D6A43D1D95DDC9004E266D /* vivadecora-testeTests */,
-				57D6A4481D95DDC9004E266D /* vivadecora-testeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -384,20 +304,6 @@
 				57D6A4331D95DDC9004E266D /* Main.storyboard in Resources */,
 				57753ABB1D99BAEA0067CB88 /* DummyVenueDetailView.xib in Resources */,
 				570468711D95F5FD0086944D /* DummyVenueView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57D6A43C1D95DDC9004E266D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57D6A4471D95DDC9004E266D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,34 +380,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57D6A43A1D95DDC9004E266D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57D6A4451D95DDC9004E266D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		57D6A4401D95DDC9004E266D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 57D6A4241D95DDC9004E266D /* vivadecora-teste */;
-			targetProxy = 57D6A43F1D95DDC9004E266D /* PBXContainerItemProxy */;
-		};
-		57D6A44B1D95DDC9004E266D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 57D6A4241D95DDC9004E266D /* vivadecora-teste */;
-			targetProxy = 57D6A44A1D95DDC9004E266D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		57D6A4311D95DDC9004E266D /* Main.storyboard */ = {
@@ -529,8 +408,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -575,8 +456,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -607,6 +490,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B384R35JC3;
 				INFOPLIST_FILE = "vivadecora-teste/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -621,57 +506,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B384R35JC3;
 				INFOPLIST_FILE = "vivadecora-teste/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.victor-barbosa.vivadecora-teste";
 				PRODUCT_NAME = "Viva Decora Teste";
-			};
-			name = Release;
-		};
-		57D6A4561D95DDC9004E266D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "vivadecora-testeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.victor-barbosa.vivadecora-testeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vivadecora-teste.app/vivadecora-teste";
-			};
-			name = Debug;
-		};
-		57D6A4571D95DDC9004E266D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "vivadecora-testeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.victor-barbosa.vivadecora-testeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vivadecora-teste.app/vivadecora-teste";
-			};
-			name = Release;
-		};
-		57D6A4591D95DDC9004E266D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "vivadecora-testeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.victor-barbosa.vivadecora-testeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "vivadecora-teste";
-			};
-			name = Debug;
-		};
-		57D6A45A1D95DDC9004E266D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "vivadecora-testeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.victor-barbosa.vivadecora-testeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "vivadecora-teste";
 			};
 			name = Release;
 		};
@@ -692,24 +533,6 @@
 			buildConfigurations = (
 				57D6A4531D95DDC9004E266D /* Debug */,
 				57D6A4541D95DDC9004E266D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		57D6A4551D95DDC9004E266D /* Build configuration list for PBXNativeTarget "vivadecora-testeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				57D6A4561D95DDC9004E266D /* Debug */,
-				57D6A4571D95DDC9004E266D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		57D6A4581D95DDC9004E266D /* Build configuration list for PBXNativeTarget "vivadecora-testeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				57D6A4591D95DDC9004E266D /* Debug */,
-				57D6A45A1D95DDC9004E266D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
